@@ -8,4 +8,18 @@
 
 body {
   min-height: 100vh;
+  background: #fff;
+  user-select: none;
+}
+
+::-webkit-scrollbar{
+  width: auto;
+}
+
+::-webkit-scrollbar-track{
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #41B883;
 }

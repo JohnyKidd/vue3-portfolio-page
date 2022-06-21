@@ -11,6 +11,7 @@ const props = defineProps({
 <div
 class="flex-projects"
 v-for="project in projects"
+:key="project.id"
 >
 
     <h3>{{ project.name }}</h3>
@@ -25,12 +26,26 @@ v-for="project in projects"
 </template>
 
 <style scoped>
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 .flex-projects{
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
     gap: 1em;
+    animation: 2s ease-out 0s 1 slideInFromBottom;
+    padding: 1em;
+    border: 5px solid #000;
+    border-radius: 15px;
+    background: #9DFFD7;
+    margin: 1em;
 }
 .navigation-projects{
     display: flex;
@@ -45,7 +60,7 @@ v-for="project in projects"
     background: #000;
     color: #fff;
     border-radius: 10px;
-    transition: all 200ms ease-in-out;
+    transition: all 200ms;
 }
 .project-links:hover{
     transform: scale(1.1);
@@ -53,7 +68,7 @@ v-for="project in projects"
 }
 img{
     max-width: 400px;
-    border: 5px solid black;
+    border: 5px solid #000;
     border-radius: 10px;
 }
 h3{
