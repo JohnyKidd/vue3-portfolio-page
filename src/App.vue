@@ -6,27 +6,27 @@ import Contact from './components/Contact.vue';
 import Personal from './components/Personal.vue';
 
 const technologies = [
-    "../public/imgs/html.svg",
-    "../public/imgs/css.svg",
-    "../public/imgs/js.svg",
-    "../public/imgs/mysql.svg",
-    "../public/imgs/php.svg",
-    "../public/imgs/vue.svg",
+    "./src/assets/imgs/html.svg",
+    "./src/assets/imgs/css.svg",
+    "./src/assets/imgs/js.svg",
+    "./src/assets/imgs/mysql.svg",
+    "./src/assets/imgs/php.svg",
+    "./src/assets/imgs/vue.svg",
 ];
 
 const tools = [
-    "../public/tools/photoshop.svg",
-    "../public/tools/github.svg",
-    "../public/tools/tailwind.svg",
-    "../public/tools/vite.svg",
-    "../public/tools/vscode.svg",
-    "../public/tools/webpack.svg",
+    "./src/assets/tools/photoshop.svg",
+    "./src/assets/tools/github.svg",
+    "./src/assets/tools/tailwind.svg",
+    "./src/assets/tools/vite.svg",
+    "./src/assets/tools/vscode.svg",
+    "./src/assets/tools/webpack.svg",
 ];
 
 const projects = [
     {
         name: "Simple Todo list application with Vue",
-        image: "../public/projects/todo.png",
+        image: "../src/assets/projects/todo.png",
         codeLink: "https://github.com/JohnyKidd/vue-3-practice-todo-list-app",
         siteLink: "https://johnykidd.github.io/vue-3-practice-todo-list-app/",
         tech: ["html", "css", "vue.js"],
@@ -34,14 +34,14 @@ const projects = [
     },
     {
         name: "Catmash - facemash clone in PHP and mySQL",
-        image: "../public/projects/catmash.png",
+        image: "../src/assets/projects/catmash.png",
         codeLink: "https://github.com/JohnyKidd/catmash-facemash-clone-practice-project-",
         tech: ["html", "css", "php", "mariadb"],
         id: 2
     },
     {
         name: "A Star Wars themed fantasy landing page",
-        image: "../public/projects/swlanding.png",
+        image: "../src/assets/projects/swlanding.png",
         codeLink: "https://github.com/JohnyKidd/SW3-3D-fantasy-landing-page",
         siteLink: "https://johnykidd.github.io/SW3-3D-fantasy-landing-page/",
         tech: ["html", "css", "javascript"],
@@ -49,7 +49,7 @@ const projects = [
     },
     {
         name: "A simple weather application",
-        image: "../public/projects/weather.png",
+        image: "../src/assets/projects/weather.png",
         codeLink: "https://github.com/JohnyKidd/weatherapp_javascript",
         siteLink: "https://johnykidd.github.io/weatherapp_javascript/s",
         tech: ["html", "css", "javascript"],
@@ -57,7 +57,7 @@ const projects = [
     },
     {
         name: "Application for counting calories (In progress)",
-        image: "../public/projects/nutritio.png",
+        image: "../src/assets/projects/nutritio.png",
         codeLink: "https://github.com/JohnyKidd/nutritio",
         siteLink: "https://johnykidd.github.io/nutritio/",
         tech: ["html", "css", "javascript", "REST"],
@@ -65,7 +65,7 @@ const projects = [
     },
     {
         name: "A little tic-tac-toe game",
-        image: "../public/projects/tictactoe.png",
+        image: "../src/assets/projects/tictactoe.png",
         codeLink: "https://github.com/JohnyKidd/tictactoe_javascript",
         siteLink: "https://johnykidd.github.io/tictactoe_javascript/",
         tech: ["html", "css", "javascript"],
