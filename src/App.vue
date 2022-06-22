@@ -1,32 +1,55 @@
 <script setup>
+// components
 import Greeting from './components/Greeting.vue';
 import SliderTech from './components/SliderTech.vue';
 import Project from './components/Project.vue';
 import Contact from './components/Contact.vue';
 import Personal from './components/Personal.vue';
 
+// tech images
+import htmlImage from './assets/imgs/html.svg';
+import cssImage from './assets/imgs/css.svg';
+import jsImage from './assets/imgs/js.svg';
+import sqlImage from './assets/imgs/mysql.svg';
+import vueImage from './assets/imgs/vue.svg';
+
+// tool images
+import psImage from './assets/tools/photoshop.svg';
+import ghImage from './assets/tools/github.svg';
+import tailwindImage from './assets/tools/tailwind.svg';
+import viteImage from './assets/tools/vite.svg';
+import vscodeImage from './assets/tools/vscode.svg';
+import webpackImage from './assets/tools/webpack.svg';
+
+// project images
+import todoImage from './assets/projects/todo.png';
+import catmashImage from './assets/projects/catmash.png';
+import swImage from './assets/projects/swlanding.png';
+import weatherImage from './assets/projects/weather.png';
+import nutritioImage from './assets/projects/nutritio.png';
+import tictactoeImage from './assets/projects/tictactoe.png';
+
 const technologies = [
-    "./src/assets/imgs/html.svg",
-    "./src/assets/imgs/css.svg",
-    "./src/assets/imgs/js.svg",
-    "./src/assets/imgs/mysql.svg",
-    "./src/assets/imgs/php.svg",
-    "./src/assets/imgs/vue.svg",
+    htmlImage,
+    cssImage,
+    jsImage,
+    sqlImage,
+    vueImage
 ];
 
 const tools = [
-    "./src/assets/tools/photoshop.svg",
-    "./src/assets/tools/github.svg",
-    "./src/assets/tools/tailwind.svg",
-    "./src/assets/tools/vite.svg",
-    "./src/assets/tools/vscode.svg",
-    "./src/assets/tools/webpack.svg",
+    psImage,
+    ghImage,
+    tailwindImage,
+    viteImage,
+    vscodeImage,
+    webpackImage
 ];
 
 const projects = [
     {
         name: "Simple Todo list application with Vue",
-        image: "../src/assets/projects/todo.png",
+        image: todoImage,
         codeLink: "https://github.com/JohnyKidd/vue-3-practice-todo-list-app",
         siteLink: "https://johnykidd.github.io/vue-3-practice-todo-list-app/",
         tech: ["html", "css", "vue.js"],
@@ -34,14 +57,14 @@ const projects = [
     },
     {
         name: "Catmash - facemash clone in PHP and mySQL",
-        image: "../src/assets/projects/catmash.png",
+        image: catmashImage,
         codeLink: "https://github.com/JohnyKidd/catmash-facemash-clone-practice-project-",
         tech: ["html", "css", "php", "mariadb"],
         id: 2
     },
     {
         name: "A Star Wars themed fantasy landing page",
-        image: "../src/assets/projects/swlanding.png",
+        image: swImage,
         codeLink: "https://github.com/JohnyKidd/SW3-3D-fantasy-landing-page",
         siteLink: "https://johnykidd.github.io/SW3-3D-fantasy-landing-page/",
         tech: ["html", "css", "javascript"],
@@ -49,7 +72,7 @@ const projects = [
     },
     {
         name: "A simple weather application",
-        image: "../src/assets/projects/weather.png",
+        image: weatherImage,
         codeLink: "https://github.com/JohnyKidd/weatherapp_javascript",
         siteLink: "https://johnykidd.github.io/weatherapp_javascript/s",
         tech: ["html", "css", "javascript"],
@@ -57,7 +80,7 @@ const projects = [
     },
     {
         name: "Application for counting calories (In progress)",
-        image: "../src/assets/projects/nutritio.png",
+        image: nutritioImage,
         codeLink: "https://github.com/JohnyKidd/nutritio",
         siteLink: "https://johnykidd.github.io/nutritio/",
         tech: ["html", "css", "javascript", "REST"],
@@ -65,7 +88,7 @@ const projects = [
     },
     {
         name: "A little tic-tac-toe game",
-        image: "../src/assets/projects/tictactoe.png",
+        image: tictactoeImage,
         codeLink: "https://github.com/JohnyKidd/tictactoe_javascript",
         siteLink: "https://johnykidd.github.io/tictactoe_javascript/",
         tech: ["html", "css", "javascript"],
