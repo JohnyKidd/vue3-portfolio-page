@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Hello! My name is Tibor Enyedi. I'm an aspiring web developer.</h1>
+        <h1>Hello! I would like to be your next web developer.</h1>
     </div>
 </template>
 

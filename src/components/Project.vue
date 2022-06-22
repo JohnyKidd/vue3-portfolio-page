@@ -15,12 +15,14 @@ v-for="project in projects"
 >
 
     <h3>{{ project.name }}</h3>
+    <div class="project-technology">
+        <span v-for="tech in project.tech" class="technology-used">{{ tech }}</span>
+    </div>
     <img :src="project.image" alt="">
     <div class="navigation-projects">
         <a v-if="project.codeLink" class="project-links" :href="project.codeLink" target=”#”>Code</a>
         <a v-if="project.siteLink" class="project-links" :href="project.siteLink" target=”#”>Site</a>
     </div>
-
 </div>
 
 </template>
@@ -51,6 +53,17 @@ v-for="project in projects"
     display: flex;
     flex-flow: row wrap;
     gap: 5em;
+}
+.technology-used{
+    border: 2px solid black;
+    border-radius: 100vw;
+    padding: .5em;
+    background: #41B883;
+    color: #fff;
+}
+.project-technology{
+    display: flex;
+    gap: 1em;
 }
 .project-links{
     text-decoration: none;

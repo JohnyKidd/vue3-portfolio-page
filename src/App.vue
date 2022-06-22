@@ -3,6 +3,7 @@ import Greeting from './components/Greeting.vue';
 import SliderTech from './components/SliderTech.vue';
 import Project from './components/Project.vue';
 import Contact from './components/Contact.vue';
+import Personal from './components/Personal.vue';
 
 const technologies = [
     "../src/assets/imgs/html.svg",
@@ -13,18 +14,29 @@ const technologies = [
     "../src/assets/imgs/vue.svg",
 ];
 
+const tools = [
+    "../src/assets/tools/photoshop.svg",
+    "../src/assets/tools/github.svg",
+    "../src/assets/tools/tailwind.svg",
+    "../src/assets/tools/vite.svg",
+    "../src/assets/tools/vscode.svg",
+    "../src/assets/tools/webpack.svg",
+];
+
 const projects = [
     {
         name: "Simple Todo list application with Vue",
         image: "../src/assets/projects/todo.png",
         codeLink: "https://github.com/JohnyKidd/vue-3-practice-todo-list-app",
         siteLink: "https://johnykidd.github.io/vue-3-practice-todo-list-app/",
+        tech: ["html", "css", "vue.js"],
         id: 1
     },
     {
         name: "Catmash - facemash clone in PHP and mySQL",
         image: "../src/assets/projects/catmash.png",
         codeLink: "https://github.com/JohnyKidd/catmash-facemash-clone-practice-project-",
+        tech: ["html", "css", "php", "mariadb"],
         id: 2
     },
     {
@@ -32,6 +44,7 @@ const projects = [
         image: "../src/assets/projects/swlanding.png",
         codeLink: "https://github.com/JohnyKidd/SW3-3D-fantasy-landing-page",
         siteLink: "https://johnykidd.github.io/SW3-3D-fantasy-landing-page/",
+        tech: ["html", "css", "javascript"],
         id: 3
     },
     {
@@ -39,6 +52,7 @@ const projects = [
         image: "../src/assets/projects/weather.png",
         codeLink: "https://github.com/JohnyKidd/weatherapp_javascript",
         siteLink: "https://johnykidd.github.io/weatherapp_javascript/s",
+        tech: ["html", "css", "javascript"],
         id: 4
     },
     {
@@ -46,6 +60,7 @@ const projects = [
         image: "../src/assets/projects/nutritio.png",
         codeLink: "https://github.com/JohnyKidd/nutritio",
         siteLink: "https://johnykidd.github.io/nutritio/",
+        tech: ["html", "css", "javascript", "nutrition api"],
         id: 5
     },
     {
@@ -53,9 +68,10 @@ const projects = [
         image: "../src/assets/projects/tictactoe.png",
         codeLink: "https://github.com/JohnyKidd/tictactoe_javascript",
         siteLink: "https://johnykidd.github.io/tictactoe_javascript/",
+        tech: ["html", "css", "javascript"],
         id: 6
     }
-]
+];
 </script>
 
 <template>
@@ -65,10 +81,15 @@ const projects = [
         <div class="flex-container">
             <SliderTech :technologies="technologies" />
         </div>
+        <h2>Tools I can use:</h2>
+        <div class="flex-container">
+            <SliderTech :technologies="tools" />
+        </div>
         <h2>My Projects:</h2>
         <div class="project-grid">
             <Project :projects="projects" />
         </div>
+        <Personal />
         <Contact />
     </div>
 </template>
