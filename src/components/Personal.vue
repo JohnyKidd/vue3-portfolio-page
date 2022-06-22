@@ -13,12 +13,14 @@
 </template>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 .personal{
     margin-top: 1em;
     text-align: center;
 }
 .personal article{
-    font-size: 15px;
+    word-spacing: .2em;
+    font-size: 20px;
     font-weight: 600;
     line-height: 30px;
     max-width: 400px;

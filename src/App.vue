@@ -60,7 +60,7 @@ const projects = [
         image: "../src/assets/projects/nutritio.png",
         codeLink: "https://github.com/JohnyKidd/nutritio",
         siteLink: "https://johnykidd.github.io/nutritio/",
-        tech: ["html", "css", "javascript", "nutrition api"],
+        tech: ["html", "css", "javascript", "REST"],
         id: 5
     },
     {
@@ -76,6 +76,7 @@ const projects = [
 
 <template>
     <div class="grid-container">
+        <a name="home"></a>
         <Greeting />
         <h2>Technologies I work with:</h2>
         <div class="flex-container">
@@ -85,10 +86,12 @@ const projects = [
         <div class="flex-container">
             <SliderTech :technologies="tools" />
         </div>
+        <a name="projects"></a>
         <h2>My Projects:</h2>
         <div class="project-grid">
             <Project :projects="projects" />
         </div>
+        <a name="contact"></a>
         <Personal />
         <Contact />
     </div>

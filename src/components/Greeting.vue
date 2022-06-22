@@ -1,17 +1,31 @@
 <template>
-    <div>
-        <h1>Hello! I would like to be your next web developer.</h1>
+    <div class="header">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
     </div>
 </template>
 
 <style scoped>
-*{
-    font-size: 1.5em;
-    text-align: center;
+.header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
     width: 100%;
-}
-h1{
+    font-size: 2em;
+    border-bottom: 5px solid #000;
+    outline: 2.5px solid #41B883;
     background: #000;
-    color: #fff;
+    position: sticky;
+    top: 0;
+}
+.header a{
+    text-decoration: none;
+    color: #41B883;
+    transition: transform 100ms ease-in-out;
+}
+.header a:hover{
+    background: #fff;
+    transform: scale(1.5);
 }
 </style>
