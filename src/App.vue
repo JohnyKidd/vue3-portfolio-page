@@ -11,6 +11,7 @@ import htmlImage from './assets/imgs/html.svg';
 import cssImage from './assets/imgs/css.svg';
 import jsImage from './assets/imgs/js.svg';
 import sqlImage from './assets/imgs/mysql.svg';
+import phpImage from './assets/imgs/php.svg';
 import vueImage from './assets/imgs/vue.svg';
 
 // tool images
@@ -34,6 +35,7 @@ const technologies = [
     cssImage,
     jsImage,
     sqlImage,
+    phpImage,
     vueImage
 ];
 

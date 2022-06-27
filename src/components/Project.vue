@@ -45,7 +45,7 @@ v-for="project in projects"
     animation: 2s ease-out 0s 1 slideInFromBottom;
     padding: 1em;
     border: 5px solid #000;
-    border-radius: 15px;
+    border-radius: 100% 0% 100% 0% / 10% 90% 10% 90%;
     background: #9DFFD7;
     margin: 1em;
 }

@@ -8,7 +8,7 @@
         Nowadays I'm working on understanding the fundamentals on a deep level and I constantly
         try new tools to spice things up a bit because I'm always open to learn.
     </article>
-    <!-- image here -->
+    <!-- <img src="" alt=""> -->
 </div>
 </template>
 
@@ -25,18 +25,18 @@
     line-height: 30px;
     max-width: 400px;
 }
-@media (min-width: 40em) {
+/* @media (min-width: 40em) {
    .personal{
     display: grid;
-    /* grid-template-columns: 50% 50%; */
-    gap: 1em;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
    }
-}
+} */
 .personal img{
-    max-width: 250px;
+    max-width: 500px;
     border: 5px solid black;
     border-radius: 50%;
-    
+    background: #808cac;
 }
 h2{
     margin-top: 1em;
